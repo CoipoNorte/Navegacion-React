@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
 import { useAuth } from '../context/AuthContext'
+import logo from '../assets/coiponorteSinFondo.png'
 
 function Sidebar({ collapsed, toggleSidebar }) {
   const { user, logout } = useAuth()
@@ -94,7 +95,7 @@ function Sidebar({ collapsed, toggleSidebar }) {
               title="Abrir menú"
             >
               <img
-                src="/coiponorteSinFondo.png"
+                src={logo}
                 alt="Coiponorte"
                 width={36}
                 height={36}
@@ -105,7 +106,7 @@ function Sidebar({ collapsed, toggleSidebar }) {
             <>
               <div className="d-flex align-items-center">
                 <img
-                  src="/coiponorteSinFondo.png"
+                  src={logo}
                   alt="Coiponorte"
                   width={36}
                   height={36}
